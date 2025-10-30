@@ -15,8 +15,9 @@ const siteData = {
   "Development Tools": [
     { 
       title: "CodePen", 
-      desc: "Online code editor for HTML, CSS, and JS.",
-      link: "https://codepen.io/"
+      desc: "CodePen is an online code editor for front-end developers to write HTML, CSS, and JS in the browser, preview results instantly, and share creative projects with the community.",
+      link: "https://codepen.io/",
+      logo: "/site/codepen.png"
     },
     { 
       title: "JSFiddle", 
@@ -101,7 +102,7 @@ function Sites() {
               <li
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`cursor-pointer px-3 py-2 rounded-md transition-all duration-300 ${
+                className={`cursor-pointer px-3 py-2 rounded-md transition-all duration-300  ${
                   activeCategory === cat
                     ? "bg-white/30 font-semibold"
                     : "hover:bg-white/10"
@@ -118,9 +119,9 @@ function Sites() {
           {siteData[activeCategory]?.map((site, i) => (
             <div
               key={i}
-              className="bg-white/10 p-4 rounded-lg border border-white/20 h-[150px] hover:bg-white/20 transition-all duration-300"
+              className="bg-linear-to-br from-indigo-400 via-pink-400 p-4 rounded-lg h-[260px] hover:bg-white/20 transition-all duration-300 mastWhiteShadow"
             >
-            <SiteCard title = {site.title} des = {site.desc} link={site.link}/>
+            <SiteCard title = {site.title} des = {site.desc} link={site.link} logo={site.logo}/>
             </div>
           ))}
         </div>
