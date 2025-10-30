@@ -32,8 +32,8 @@ const developmentResource = [
 function LandingPage() {
   return (
     <Container>
-      <div className="w-full ">
-        <div className="flex  flex-col gap-3 ">
+      <div className="w-full">
+        <div className="flex  flex-col gap-3">
           <div className=" w-full h-full relative">
             <video
               src="/video.mp4"
@@ -44,10 +44,10 @@ function LandingPage() {
               className="w-full h-screen object-cover"
             />
 
-            <div className=" h-screen absolute top-0 w-full pt-20 p-5 flex flex-col gap-3">
+            <div className=" h-screen absolute top-0 w-full lg:pt-20 lg:p-10 flex flex-col gap-3">
               {/* top div  */}
               <div className=" w-full h-6/12 flex gap-3">
-                <div className="lg:w-[70%] bg-black/50 rounded-md p-8 mastWhiteShadow">
+                <div className="lg:w-[70%] bg-black/50 rounded-md p-8 mastWhiteShadow flex flex-col justify-center">
                   <h1 className="lg:text-4xl text-2xl font-extrabold text-white drop-shadow-md tracking-wide">
                     The Developer’s Vault
                   </h1>
