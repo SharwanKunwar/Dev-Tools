@@ -24,9 +24,10 @@ const developmentResource = [
     desc: "Stay organized with time-saving apps and project management tools.",
   },
   {
-    title: "Community & Forums",
+    title: "Documentation & Research",
     desc: "Connect with other developers and grow through discussion and collaboration.",
   },
+  
 ];
 
 function LandingPage() {
